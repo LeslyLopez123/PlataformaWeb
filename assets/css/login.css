@@ -1,0 +1,77 @@
+  
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Contenedor principal */
+  .login-container {
+    background-color: #f0d5d5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Caja del formulario */
+  .login-box {
+    background-color: #d4a7a7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Icono del usuario */
+  .icon img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .icon p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Título */
+  h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos de etiquetas e inputs */
+  label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Botón de inicio de sesión */
+  button {
+    background-color: #5c2c2c;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #442020;
+  }

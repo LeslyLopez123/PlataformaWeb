@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vista Admin - GlowUp Beauty</title>
+  <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>GlowUp Beauty</h2>
+      <div class="admin">
+        <div class="icon">👤</div>
+        <div>
+          <strong>Administrador/a</strong><br>
+          Lesly López
+        </div>
+      </div>
+      <nav class="menu">
+        <h3>Productos</h3>
+        <ul>
+          <li>Labiales</li>
+          <li>Polvos</li>
+          <li>Rubores</li>
+          <li>Bases</li>
+          <li>Pestañinas</li>
+          <li>Iluminadores</li>
+          <li>Cejas</li>
+          <li>Paleta</li>
+          <li>Delineadores</li>
+          <li>Skin Care</li>
+        </ul>
+        <h3>Servicios</h3>
+        <ul>
+          <li>Maquillaje profesional</li>
+          <li>Asesoría de imagen</li>
+          <li>Clases de automaquillaje</li>
+          <li>Eventos especiales</li>
+        </ul>
+        <div id="buttoncerrar">
+          <button class="delete" onclick="logout()">Cerrar Sesión</button>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+        <section>
+          <h2>PRODUCTOS</h2>
+          <div class="buttons">
+            <button class="add">Agregar</button>
+          </div>
+          <div class="card-grid">
+              <div class="card">
+                <img src="assets/img/labiales.png" alt="labiales">
+                <p><strong>Labiales</strong></p>
+              </div>
+              <div class="card">
+                <img src="assets/img/polvos.png" alt="Polvos">
+                <p><strong>Polvos</strong></p>
+              </div>
+              <div class="card">
+                <img src="assets/img/rubores.png" alt="Rubores">
+                <p><strong>Rubores</strong></p>
+              </div>
+              <div class="card">
+                <img src="assets/img/bases.png" alt="Bases">
+                <p><strong>Bases</strong></p>
+              </div>
+              <div class="card">
+                <img src="assets/img/pestaninas.png" alt="Pestañinas">
+                <p><strong>Pestañinas</strong></p>
+              </div>
+            </div>
+        </section>
+  
+        <section>
+          <div class="card-grid">
+              <div class="card">
+                <img src="assets/img/iluminadores.png" alt="Iluminadores">
+                <p><strong>Iluminadores</strong></p>
+              </div>
+              <div class="card">
+                <img src="assets/img/cejas.png" alt="Cejas">
+                <p><strong>Cejas</strong></p>
+              </div>
+              <div class="card">
+                <img src="assets/img/paleta.png" alt="Paletas">
+                <p><strong>Paletas</strong></p>
+              </div>
+              <div class="card">
+                <img src="assets/img/delineadores.png" alt="Delineadores">
+                <p><strong>Delineadores</strong></p>
+              </div>
+              <div class="card">
+                <img src="assets/img/skincare.png" alt="skincare">
+                <p><strong>Skin Care</strong></p>
+              </div>
+            </div>
+        </section>
+  
+  
+        <br>
+        <br>
+  
+        <section>
+          <h2>SERVICIOS</h2>
+          <div class="buttons">
+            <button class="add">Agregar</button>
+          </div>
+          <div class="card-grid">
+            <div class="card">
+              <img src="assets/img/maquillajeprofesional.png" alt="Maquillaje profesional">
+              <p><strong>Maquillaje profesional</strong></p>
+            </div>
+            <div class="card">
+              <img src="assets/img/asesoria.png" alt="Asesoría de imagen">
+              <p><strong>Asesoría de imagen</strong></p>
+            </div>
+            <div class="card">
+              <img src="assets/img/automaquillaje.png" alt="Clases de automaquillaje">
+              <p><strong>Clases de automaquillaje</strong></p>
+            </div>
+            <div class="card">
+              <img src="assets/img/eventoespecial.png" alt="Eventos especiales">
+              <p><strong>Eventos especiales</strong></p>
+            </div>
+          </div>
+        </section>
+      </main>
+  </div>
+
+  <!-- Modal para agregar producto -->
+<div id="modalAgregarProducto" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Agregar Producto</h3>
+    <form id="formAgregarProducto">
+      <label for="nombre">Nombre del producto:</label>
+      <input type="text" id="nombre" required>
+
+      <label for="imagen">URL de la imagen:</label>
+      <input type="text" id="imagen" required>
+
+      <button type="submit" class="add">Agregar</button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal para editar producto -->
+<div id="modalEditarProducto" class="modal">
+  <div class="modal-content">
+    <span class="close" id="cerrarEditar">&times;</span>
+    <h2>Editar producto</h2>
+    <form id="formEditarProducto">
+      <input type="hidden" id="editarId">
+      <div class="form-group">
+        <label for="editarNombre">Nombre:</label>
+        <input type="text" id="editarNombre" required>
+      </div>
+      <div class="form-group">
+        <label for="editarImagen">Imagen (URL):</label>
+        <input type="text" id="editarImagen" required>
+      </div>
+      <img id="vistaPrevia" src="" alt="Vista previa" style="max-width: 100%; margin-top: 10px;">
+      <button class="add" type="submit">Guardar</button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal Agregar Servicio -->
+<div id="modalAgregarServicio" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Agregar Servicio</h3>
+    <form>
+      <label for="nombre">Nombre del servicio:</label>
+      <input type="text" id="nombre" required>
+
+      <label for="imagen">URL de la imagen:</label>
+      <input type="text" id="imagen" required>
+      <button class="add" type="submit">Agregar</button>
+    </form>
+  </div>
+</div>
+
+<!-- Modal Editar Servicio -->
+<div id="modalEditarServicio" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3>Editar Servicio</h3>
+    <form>
+      <input type="text" name="nombre" placeholder="Nombre del servicio" required>
+      <input type="text" name="imagen" placeholder="URL de la imagen" required>
+      <button type="submit">Guardar</button>
+    </form>
+  </div>
+</div>
+
+
+</body>
+<script src="assets/js/login.js"></script>
+<script src="assets/js/productos_admin.js"></script>
+<script src="assets/js/servicios_admin.js"></script>
+</html>

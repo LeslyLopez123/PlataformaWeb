@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #5C330A;
+  margin: 0;
+  overflow-x: hidden;
+
+}
+
+header {
+  background-color: #EED6CD;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #5C330A;
+  font-weight: bold;
+}
+
+
+/*BIENVENIDAS*/
+.divisiones {
+  display: flex;
+  height: auto; 
+  width: 100vw;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+}
+
+.izquierda {
+  width: 50%;
+  /*background-color: #f3ddd4;*/
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.izquierda img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.derecha {
+  width: 50%;
+  /*background-color: #f3ddd4;*/
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.texto-bienvenidas {
+  max-width: 400px;
+  color: #5C3D0A;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espacio entre título y párrafo */
+}
+
+.texto-bienvenidas h2 {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 5px;  /* antes estaba en 15px */
+}
+
+
+.texto-bienvenidas p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+
+.secciones {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.card {
+  background-color: #F7F0EC;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.marcas {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.marcas h2 {
+  margin-bottom: 20px;
+}
+
+.marcas-lista img {
+  width: 100px;
+  margin: 0 10px;
+}
+
+.contacto {
+  background-color: #D1A083;
+  padding: 40px 20px;
+}
+
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contacto textarea {
+  width: 100%;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #5C330A;
+  background-color: transparent;
+  color: #000;
+}
+
+button {
+  background-color: white;
+  color: #5C330A;
+  padding: 8px 20px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-left: 500px;
+}
+
+.mensaje-exito {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: 468px;
+}
+
+footer {
+  background-color: #EED6CD;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.info-footer .marca {
+  font-size: 18px;
+}
+
+.social i {
+  margin: 0 8px;
+  font-size: 20px;
+  color: #5C330A;
+}
+
+footer .copyright {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.servicios-productos-clientes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #f3ddd4;
+}
+
+.servicios-productos-clientes .card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.servicios-productos-clientes h3 span {
+  border-bottom: 1px solid #5C330A;
+  display: inline-block;
+  padding-bottom: 5px;
+  color: #5C330A;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+}
+
+.servicios-productos-clientes p {
+  margin-top: 10px;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.marcas h2 {
+  color: #5C330A;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.contenedor-marcas {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contenedor-marcas img {
+  width: 160px; /* Ajusta este valor para agrandar más */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.contenedor-marcas img:hover {
+  transform: scale(1.1); /* efecto sutil al pasar el mouse */
+}
+
+

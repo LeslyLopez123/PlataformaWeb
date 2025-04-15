@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vista usuario - GlowUp Beauty</title>
+  <link rel="stylesheet" href="assets/css/usuario.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>GlowUp Beauty</h2>
+      <div class="admin">
+        <div class="icon">👤</div>
+        <div>
+          <strong>Usuario</strong><br>
+          Karintia Montoya
+        </div>
+      </div>
+      <nav class="menu">
+        <h3>Productos</h3>
+        <ul>
+          <li>Labiales</li>
+          <li>Polvos</li>
+          <li>Rubores</li>
+          <li>Bases</li>
+          <li>Pestañinas</li>
+          <li>Iluminadores</li>
+          <li>Cejas</li>
+          <li>Paleta</li>
+          <li>Delineadores</li>
+          <li>Skin Care</li>
+        </ul>
+        <h3>Servicios</h3>
+        <ul>
+          <li>Maquillaje profesional</li>
+          <li>Asesoría de imagen</li>
+          <li>Clases de automaquillaje</li>
+          <li>Eventos especiales</li>
+        </ul>
+        <div id="buttoncerrar">
+          <button class="delete" onclick="logout()">Cerrar Sesión</button>
+        </div>
+      </nav>
+    </aside>
+
+
+    <main class="main-content">
+      <section>
+        <h2>PRODUCTOS</h2>
+        <div class="card-grid" id="productos-usuario">
+            <div class="card">
+              <img  src="assets/img/labiales.png" alt="Labiales">
+              <p><strong>Labiales</strong></p>
+            </div>
+            <div class="card">
+              <img src="assets/img/polvos.png" alt="Polvos">
+              <p><strong>Polvos</strong></p>
+            </div>
+            <div class="card">
+              <img src="assets/img/rubores.png" alt="Rubores">
+              <p><strong>Rubores</strong></p>
+            </div>
+            <div class="card">
+              <img src="assets/img/bases.png" alt="Bases">
+              <p><strong>Bases</strong></p>
+            </div>
+            <div class="card">
+              <img src="assets/img/pestaninas.png" alt="Pestañinas">
+              <p><strong>Pestañinas</strong></p>
+            </div>
+          </div>
+      </section>
+
+      <section>
+        <div class="card-grid">
+            <div class="card">
+              <img src="assets/img/iluminadores.png" alt="Iluminadores">
+              <p><strong>Iluminadores</strong></p>
+            </div>
+            <div class="card">
+              <img  src="assets/img/cejas.png" alt="Cejas">
+              <p><strong>Cejas</strong></p>
+            </div>
+            <div class="card">
+              <img src="assets/img/paleta.png" alt="Paletas">
+              <p><strong>Paletas</strong></p>
+            </div>
+            <div class="card">
+              <img src="assets/img/delineadores.png" alt="Delineadores">
+              <p><strong>Delineadores</strong></p>
+            </div>
+            <div class="card">
+              <img src="assets/img/skincare.png" alt="skincare" loading="eager">
+              <p><strong>Skin Care</strong></p>
+            </div>
+          </div>
+      </section>
+
+
+      <br>
+      <br>
+
+      <section>
+        <h2>SERVICIOS</h2>
+        <div class="card-grid" id="servicios-usuario">
+          <div class="card">
+            <img src="assets/img/maquillajeprofesional.png" alt="Maquillaje profesional" >
+            <p><strong>Maquillaje profesional</strong></p>
+          </div>
+          <div class="card">
+            <img src="assets/img/asesoria.png" alt="Asesoría de imagen" loading="eager">
+            <p><strong>Asesoría de imagen</strong></p>
+          </div>
+          <div class="card">
+            <img src="assets/img/automaquillaje.png" alt="Clases de automaquillaje" loading="eager">
+            <p><strong>Clases de automaquillaje</strong></p>
+          </div>
+          <div class="card">
+            <img  src="assets/img/eventoespecial.png" alt="Eventos especiales" loading="eager">
+            <p><strong>Eventos especiales</strong></p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+<script src="assets/js/login.js"></script>
+</html>
