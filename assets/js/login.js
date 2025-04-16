@@ -48,6 +48,6 @@ else {
 
 function logout(){
     sessionStorage.clear();
-    window.location.href = "home.html"
+    window.location.href = "index.html"
 }
   
