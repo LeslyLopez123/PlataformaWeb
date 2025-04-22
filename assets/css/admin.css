@@ -1,7 +1,11 @@
+
 body {
     margin: 0;
+    padding: 0;
+    height: 100vh;
     font-family: Arial, sans-serif;
     background-color: #fdfdfd;
+    
   }
   
   .container {
@@ -12,6 +16,7 @@ body {
   .sidebar {
     width: 220px;
     background-color: #efb6ab;
+    min-height: 100%;
     color: #333;
     padding: 20px;
   }
@@ -50,6 +55,7 @@ body {
     flex-grow: 1;
     padding: 20px;
     background-color: white;
+    overflow-y: auto;
   }
   
   h2 {
